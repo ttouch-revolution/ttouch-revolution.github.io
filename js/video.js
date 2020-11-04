@@ -39,26 +39,26 @@ function nextFrame() {
 
 function embrace() {
   // show next frame
-  $("#embrace-hrz").attr("src","images/_embrace-hrz/pic" + frames_counter + ".png");
-  $("#embrace-vrt").attr("src","images/_embrace-vrt/pic" + frames_counter + ".png");
+  $("#embrace-hrz").attr("src","images/embrace-hrz/pic" + frames_counter + ".png");
+  $("#embrace-vrt").attr("src","images/embrace-vrt/pic" + frames_counter + ".png");
 }
 
 function its() {
   // show next frame
-  $("#its").attr("src","images/_its/pic" + frames_counter + ".png");
+  $("#its").attr("src","images/its/pic" + frames_counter + ".png");
 }
 
 function how() {
   // show next frame
-  $("#how").attr("src","images/_how/pic" + frames_counter + ".png");
+  $("#how").attr("src","images/how/pic" + frames_counter + ".png");
 }
 
 function time() {
   // show next frame
-  $("#time").attr("src","images/_time/pic" + time_frames_counter + ".png");
+  $("#time").attr("src","images/time/pic" + time_frames_counter + ".png");
 }
 
 function why() {
   // show next frame
-  $("#why").attr("src","images/_why/pic" + why_frames_counter + ".png");
+  $("#why").attr("src","images/why/pic" + why_frames_counter + ".png");
 }
