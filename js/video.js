@@ -9,7 +9,7 @@ var why_frames_counter = 0;
 var why_frames_max = 21;
 
 $(document).ready(function(){
-  //nextFrame();
+  nextFrame();
 });
 
 function nextFrame() {
