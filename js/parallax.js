@@ -8,7 +8,7 @@ $(document).ready(function(){
   new ScrollMagic.Scene({
     triggerElement: "#rosto-trigger-scene",
     triggerHook: "onLeave",
-    duration: "85%",
+    duration: "80%",
     offset: -10
   })
   .setPin("#rosto", {pushFollowers: false})

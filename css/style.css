@@ -31,6 +31,13 @@
 
 .time-container {
   background: linear-gradient(355deg, var(--cor-roxo) 0%, var(--cor-roxo) 50%, white 50.2%, white 100%);
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .time-container img {
+    width: 400%;
+  }
 }
 
 .why-container {
@@ -228,10 +235,6 @@ nav {
   left: 50%;
 }
 
-.hamburger-icon.open> nav {
-  background: var(--cor-azul);
-}
-
 /******************************* NAVBAR SUBMENU ******************************/
 
 #navbar-menu a {
@@ -331,6 +334,10 @@ nav {
   filter: invert(44%) sepia(89%) saturate(2100%) hue-rotate(112deg) brightness(90%) contrast(101%);
 }
 
+#sobre .texto-1 {
+  margin-bottom: 0.5em;
+}
+
 /******************************* SOMOS ******************************/
 
 #somos {
@@ -401,7 +408,7 @@ nav {
 
 #banner-how {
   background: var(--cor-amarelo-bg);
-  margin-top: 1em;
+  padding-top: 1em;
 }
 
 #banner-how img {
@@ -423,6 +430,7 @@ nav {
 }
 
 .strategy {
+  position: relative;
   overflow: hidden;
 }
 
@@ -479,6 +487,12 @@ nav {
   .nome-cargo {
     text-align: center;
   }
+
+  #linha {
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 #equipa .nome-cargo {
@@ -524,7 +538,7 @@ nav {
 
 #clientes h5 {
   margin-top: 1em;
-  color: var(--cor-roxo-1);
+  color: var(--cor-roxo);
   text-transform: uppercase;
   text-align: center;
 }
@@ -542,8 +556,17 @@ nav {
   text-align: center;
 }
 
-#contactos h1 {
+#contactos a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1em;
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight: var(--font-weight-bold);
+  line-height: 1em;
+}
+
+#contactos h1 {
   font-weight: var(--font-weight-bold);
   font-size: 1em;
   color: white;
@@ -556,18 +579,6 @@ nav {
   font-size: 0.7em;
   color: white;
   margin-bottom: 0.6em;
-}
-
-#contactos .numero {
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-#contactos .email {
-  font-size: 1.2em;
-  font-weight: 600;
-  line-height: 0.5em;
-  margin-bottom: 0.9em;
 }
 
 #contactos .morada {
