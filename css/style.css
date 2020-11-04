@@ -1,0 +1,575 @@
+:root {
+  --cor-amarelo:    #ffc600;
+  --cor-laranja-1:  #ff6700;
+  --cor-laranja-2:  #ff3600;
+  --cor-vermelho:   #ff001f;
+  --cor-azul:       #055dff;
+  --cor-roxo:       #4500d0;
+
+  --cor-amarelo-bg: #ffc700;
+  --cor-laranja-bg: #ff3300;
+  --cor-vermelho-bg:#ff001f;
+  --cor-verde-bg:   #00b019;
+  --cor-roxo-bg:    #3c00c7;
+  --cor-cinza-bg:   #030303;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/*************************************/
+
+.time-container {
+  background: linear-gradient(355deg, var(--cor-roxo) 0%, var(--cor-roxo) 50%, white 50.2%, white 100%);
+}
+
+.why-container {
+  background: linear-gradient(180deg, var(--cor-cinza-bg) 0%, var(--cor-cinza-bg) 25%, var(--cor-vermelho-bg) 25.1%, var(--cor-vermelho-bg) 100%);
+}
+
+.texto-element {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.texto-element.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+/******************************* HTML ******************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: 24pt;
+}
+
+.container {
+}
+
+img ,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.3em; /* 80 */
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1em; /* 60 */
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 300;
+  opacity: 65%;
+  line-height: 1em;
+}
+
+h4 {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.45rem; /* 35 */
+}
+
+h5 {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem; /* 30 */
+}
+
+p {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+}
+
+/******************************* ANCHORS ******************************/
+
+#about ,
+#who {
+  display: block;
+  position: relative;
+  top: -15px;
+  visibility: hidden;
+}
+
+#about {
+  top: -30px;
+}
+
+/******************************* HEADER ******************************/
+
+header {
+  margin-bottom: 40px;
+}
+
+nav {
+  background: black;
+}
+
+.navbar-brand img {
+  width: 70%;
+  filter: invert(100%);
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  top: 2px;
+}
+
+.hamburger-icon span {
+  background: white;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 2px;
+}
+
+.hamburger-icon span:nth-child(2), .hamburger-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-icon span:nth-child(4) {
+  top: 18px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-icon.open> nav {
+  background: var(--cor-azul);
+}
+
+/******************************* NAVBAR SUBMENU ******************************/
+
+
+#navbar-menu a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: var(--font-weight-bold);
+  line-height: 1em;
+}
+
+#navbar-menu h1 {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  font-size: 1em;
+  color: white;
+  margin-bottom: 0.6em;
+}
+
+#navbar-menu h2 {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  font-size: 0.7em;
+  color: white;
+  margin-bottom: 0.6em;
+}
+
+#navbar-menu .email {
+  margin-bottom: 2em;
+}
+
+/******************************* ROSTO ******************************/
+
+#rosto {
+  height: calc(100vh - 30px);
+  width: 100%;
+  background: url("../images/rosto-hrz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#rosto .banner {
+  position: relative;
+  top: 0;
+}
+
+.embrace-container {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #rosto {
+    height: calc(100vh - 60px);
+    background: url("../images/rosto-vrt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  #rosto .banner {
+    position: relative;
+    top: 2vh;
+  }
+
+  #rosto .embrace-container {
+    top: 1vh;
+  }
+
+  #rosto .banner img {
+    height: 29vh;
+  }
+}
+
+
+/******************************* SOBRE ******************************/
+
+#sobre {
+  background: white;
+  z-index: 3;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#sobre h2 {
+  color: black;
+}
+
+#sobre h3 {
+  color: black;
+}
+
+#sobre .its-container img {
+  filter: invert(44%) sepia(89%) saturate(2100%) hue-rotate(112deg) brightness(90%) contrast(101%);
+}
+
+/******************************* SOMOS ******************************/
+
+#somos {
+  background-color: var(--cor-roxo);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#somos h2 {
+  color: white;
+}
+
+#somos h3 {
+  color: white;
+}
+
+#somos .d-none.d-lg-block {
+  position: relative;
+}
+
+#walking-the-talk {
+  position: absolute;
+  z-index: 0;
+  width: 20%;
+  top:-3em;
+}
+
+@media (max-width: 991px) {
+  #walking-the-talk {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    top: 0;
+  }
+}
+
+/******************************* BANNER WHY WE ARE ******************************/
+
+#banner-why-we-are {
+  background: black;
+}
+
+/******************************* REVOLUCIONAMOS ******************************/
+
+#revolucionamos {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: black;
+}
+
+#revolucionamos h2 {
+  color: white;
+}
+
+#revolucionamos h3 {
+  color: white;
+}
+
+/******************************* HOW WE GONNA DO IT ******************************/
+
+#banner-how {
+  background: var(--cor-amarelo-bg);
+}
+
+#banner-how img {
+  filter: invert(100%);
+}
+
+/******************************* CRIATIVIDADE ******************************/
+
+
+#criatividade {
+  background: var(--cor-amarelo-bg);
+}
+
+#criatividade h2 {
+  position: relative;
+  z-index: 3;
+  color: var(--cor-vermelho);
+  text-transform: uppercase;;
+}
+
+.strategy {
+  position: relative;
+  margin-top: -4em;
+  overflow: hidden;
+}
+
+#strategy-locked {
+  position: absolute;
+  z-index: 0;
+}
+
+#strategy-wheel {
+  top: -100%;
+  z-index: 0;
+  position: relative;
+  -webkit-animation:spin 60s linear infinite;
+  -moz-animation:spin 60s linear infinite;
+  animation:spin 60s linear infinite;
+  overflow: hidden;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/******************************* EQUIPA ******************************/
+
+#equipa {
+  background-color: var(--cor-roxo-bg);
+  color: white;
+}
+
+#equipa h2 {
+  text-transform: uppercase;
+  background: var(--cor-roxo-bg) !important;
+  color: var(--cor-vermelho);
+  text-align: center;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  z-index: 3;
+}
+
+#equipa .linha {
+  height: 1em;
+  background: var(--cor-amarelo-bg);
+}
+
+#linha {
+  background: url("../images/linha.png");
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+@media (max-width: 991px) {
+  .nome-cargo {
+    text-align: center;
+  }
+}
+
+#equipa .nome-cargo {
+  background: var(--cor-amarelo-bg);
+  padding-top: 0.15em;
+  padding-bottom: 0.1em;
+}
+
+#equipa .nome {
+  font-weight: var(--font-weight-bold);
+  font-size: 0.6em;
+  line-height: 0.8em;
+  color: black;
+}
+
+#equipa .cargo {
+  font-weight: var(--font-weight-bold);
+  font-size: 0.5em;
+  color: black;
+}
+
+#equipa .bio {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+#equipa .bio p {
+  font-weight: var(--font-weight-medium);
+  color: white;
+  font-size: 0.47em;
+  line-height: 1.1em;
+}
+
+#equipa .col-lg-4:last-child {
+  padding-right: 0;
+}
+
+/******************************* CLIENTES ******************************/
+
+#clientes {
+  background-color: white;
+}
+
+#clientes h5 {
+  margin-top: 1em;
+  color: var(--cor-roxo-1);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/******************************* CONTACTOS ******************************/
+
+#contactos {
+  margin-top: 1em;
+  background: var(--cor-laranja-bg);
+  color: white;
+}
+
+#contactos .texto-contactos {
+  padding-top: 1em;
+  text-align: center;
+}
+
+#contactos .numero {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#contactos .email {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 0.5em;
+  margin-bottom: 0.9em;
+}
+
+#contactos .morada {
+  font-size: 0.73em;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #contactos .email {
+    font-size: 0.8em;
+  }
+
+  #contactos .morada {
+    font-size: 0.63em;
+  }
+}
+
+/******************************* COPY ******************************/
+
+#copy {
+  background-color: var(--cor-roxo-bg);
+  padding-bottom: 8em;
+}
+
+#copy h5 {
+  color: white;
+  background: var(--cor-roxo-2);
+  text-align: center;
+  height: 1.5em;
+  padding-top: 0.1em;
+  vertical-align: middle;
+}
