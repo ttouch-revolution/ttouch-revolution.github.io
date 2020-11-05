@@ -338,11 +338,11 @@ nav {
   position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
+  min-height: 100vh;
 }
 
 @media (max-width: 767px) {
   #sobre {
-    min-height: 80vh;
   }
 }
   #sobre h2 {
@@ -408,15 +408,7 @@ nav {
 
 #revolucionamos {
   padding-top: 1.5em;
-  padding-bottom: 1em;
   background: var(--cor-amarelo-bg);
-}
-
-@media (max-width: 991px) {
-  #revolucionamos {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
 }
 
 #revolucionamos h2 {
@@ -431,7 +423,6 @@ nav {
 
 #banner-how {
   background: var(--cor-amarelo-bg);
-  padding-top: 1em;
 }
 
 #banner-how img {
