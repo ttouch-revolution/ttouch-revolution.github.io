@@ -407,9 +407,9 @@ nav {
 /******************************* REVOLUCIONAMOS ******************************/
 
 #revolucionamos {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
-  background: black;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  background: var(--cor-amarelo-bg);
 }
 
 @media (max-width: 991px) {
@@ -420,11 +420,11 @@ nav {
 }
 
 #revolucionamos h2 {
-  color: white;
+  color: black;
 }
 
 #revolucionamos h3 {
-  color: white;
+  color: black;
 }
 
 /******************************* HOW WE GONNA DO IT ******************************/
