@@ -337,8 +337,7 @@ nav {
   z-index: 3;
   position: relative;
   padding-top: 1em;
-  padding-bottom: 1em;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 @media (max-width: 767px) {
@@ -365,8 +364,8 @@ nav {
 
 #somos {
   background-color: var(--cor-roxo);
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 3em;
 }
 
 #somos h2 {
@@ -407,7 +406,7 @@ nav {
 /******************************* REVOLUCIONAMOS ******************************/
 
 #revolucionamos {
-  padding-top: 1.5em;
+  padding-top: 2.5em;
   background: var(--cor-amarelo-bg);
 }
 
