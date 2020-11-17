@@ -6,7 +6,7 @@ var frames_max = 150;
 var time_frames_counter = 0;
 var time_frames_max = 52;
 var why_frames_counter = 0;
-var why_frames_max = 21;
+var why_frames_max = 42;
 
 $(document).ready(function(){
   nextFrame();

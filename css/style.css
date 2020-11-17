@@ -33,18 +33,23 @@
   overflow: hidden;
 }
 
+.why-container {
+  background: linear-gradient(180deg, var(--cor-roxo) 0%, var(--cor-roxo) 25%, var(--cor-amarelo-bg) 25.1%, var(--cor-amarelo-bg) 100%);
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   .time-container img {
     width: 400%;
   }
 
+  .why-container img {
+    width: 400%;
+  }
+  
   .col-xs-12.col-sm-12 {
     padding: 0;
   }
-}
-
-.why-container {
-  background: linear-gradient(180deg, var(--cor-cinza-bg) 0%, var(--cor-cinza-bg) 25%, var(--cor-vermelho-bg) 25.1%, var(--cor-vermelho-bg) 100%);
 }
 
 .texto-element {
@@ -395,12 +400,6 @@ nav {
     width: 90%;
     top: 0;
   }
-}
-
-/******************************* BANNER WHY WE ARE ******************************/
-
-#banner-why-we-are {
-  background: black;
 }
 
 /******************************* REVOLUCIONAMOS ******************************/

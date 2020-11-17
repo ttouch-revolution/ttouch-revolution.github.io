@@ -959,12 +959,9 @@
           </div>
         </section>
 
-        <div class="banner" id="banner-why-we-are">
-          <div class="container">
-            <video autoplay="" loop="" muted="">
-              <source src="images/why_are_we_different.mp4">
-                Your browser does not support HTML5 video.
-            </video>
+        <div class="banner">
+          <div class="why-container">
+            <img id="why" src="images/why/pic0.png">
           </div>
         </div>
         
@@ -1004,6 +1001,7 @@
         </section>
           
         <span class="trigger-texto"></span>
+        
         <div class="banner" id="banner-how">
           <div class="texto-element">
             <div class="container">
@@ -1080,19 +1078,8 @@
         <!-- equipa -->
         <section id="equipa">
           <div class="container">
-            <div class="row">
-              <!-- margem -->
-              <div class="col-md-1 col-lg-1 col-xl-1"></div>
 
-              <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                <div class="linha"></div>
-              </div>
-
-              <!-- margem -->
-              <div class="col-md-1 col-lg-1 col-xl-1"></div>
-            </div>
-
-            <div class="row align-items-center" style="margin-top: 0.1em; margin-bottom: 0.1em;">
+            <div class="row align-items-center" style="padding-top: 0.1em; margin-bottom: 0.1em;">
               <!-- margem -->
               <div class="col-md-2 col-lg-2 col-xl-2"></div>
 
@@ -1339,11 +1326,15 @@
             <div class="row">
               <div class="col">
                 <h5>MARCAS QUE JÁ TRABALHÁMOS</h5>
-                <img src="images/logos.jpg">
-                <p style="display: none;">
-                  EDP • ENDESA • GALP • CEPSA • PORTUGAL TELECOM • CABOVISÃO • TMN • MEO • NOKIA • SIEMENS • AUDI • KIA • MERCEDES • OPEL • RENAULT • SUZUKI • VOLVO • KINDA • WORTEN • CONTINENTE • PÃO DE AÇÚCAR • GORILA • MARS • SOGRAPE • FRIZE • LUSO • SUCOL E SUMOL • ABSOLUT VODKA • MARTINI • SAGRES • TIGRA • BLUE • WELWITSCHIA • ÁGUAS DE PORTUGAL • PROCTER & GAMBLE • EVAX • ESTÉE LAUDER • TAP • TURISMO DE PORTUGAL • BANIF • BANCO MONTEPIO • BANCO BEST • BCP MILLENNIUM • BES • BPI • CUF • ROCHE • L’OREAL • NIVEA • NIKE • VISTA ALEGRE</p>
-                <p style="display: none;">EDP • Endesa • Galp • Cepsa • Portugal Telecom • Cabovisão • TMN • MEO • Nokia • Siemens • Audi • Kia • Mercedes • Opel • Renault • Suzuki • Volvo • Kinda • Worten • Continente • Pão de Açúcar • Gorila • Mars • Sogrape • Frize • Luso • Sucol e Sumol • Absolut Vodka • Martini • Sagres • Tigra • Blue • Welwitschia • Águas de Portugal • Procter & Gamble • Evax • Estée Lauder • TAP • Turismo de Portugal • Banif • Banco Montepio • Banco Best • BCP Millennium • Bes • BPI • CUF • Roche • L’Oreal • Nivea • Nike • Vista Alegre</p>
-              </div>
+                <!-- visivel para monitores >= lg -->
+                <div class="d-none d-lg-block">
+                  <img src="images/logos_desktop.jpg" alt="clientes">
+                </div>
+
+                <!-- visivel para monitores < lg -->
+                <div class="d-lg-none">
+                  <img src="images/logos_mobile.jpg" alt="clientes">
+                </div>
             </div>
           </div>
         </section>
