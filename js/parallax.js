@@ -50,4 +50,26 @@ $(document).ready(function(){
     .setTween(tween)
     .addTo(controller);
   }
+  
+  /*---------------------------------------------------------*/
+  
+  tween = TweenMax.fromTo( $('.how-element'), 1,
+    {
+      opacity:0,
+      ease:Power1.easeInOut
+    },
+    {
+      opacity:1,
+      ease:Power1.easeInOut
+    }
+  );
+  
+  // create new scene
+  new ScrollMagic.Scene({
+    triggerElement: ".trigger-how",
+    triggerHook: "onEnter",
+    duration: "80%"
+  })
+  .setTween(tween)
+  .addTo(controller);
 });
