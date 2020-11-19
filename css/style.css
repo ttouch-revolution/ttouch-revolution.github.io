@@ -177,7 +177,7 @@ nav {
 }
 
 .navbar-brand img {
-  width: 70%;
+  width: 90%;
   filter: invert(100%);
 }
 
@@ -286,7 +286,7 @@ nav {
   margin-bottom: 0.6em;
 }
 
-#navbar-menu .email {
+#navbar-menu .social-media {
   margin-bottom: 100vh;
 }
 
@@ -606,6 +606,16 @@ nav {
 #contactos .morada {
   font-size: 0.73em;
   text-align: center;
+}
+
+.social-media {
+  margin-right: 1.5em;
+  width: 1.5em;
+  filter: invert(100%);
+}
+
+.social-media:last-of-type {
+  margin-right: 0;
 }
 
 /******************************* COPY ******************************/
