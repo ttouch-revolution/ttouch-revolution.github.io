@@ -176,6 +176,10 @@ nav {
   background: black;
 }
 
+.navbar-brand {
+  width: 104px;
+}
+
 .navbar-brand img {
   filter: invert(100%);
 }
