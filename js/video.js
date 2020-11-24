@@ -5,6 +5,8 @@ var embrace_hrz_frames_counter = 0;
 var embrace_hrz_frames_max = 150;
 var embrace_vrt_frames_counter = 50;
 var embrace_vrt_frames_max = 150;
+var its_frames_counter = 20;
+var its_frames_max = 150;
 var time_frames_counter = 0;
 var time_frames_max = 52;
 var why_frames_counter = 0;
@@ -24,6 +26,10 @@ function nextFrame() {
   embrace_vrt_frames_counter++;
   if(embrace_vrt_frames_counter == embrace_vrt_frames_max)
     embrace_vrt_frames_counter = 0;
+
+  its_frames_counter++;
+  if(its_frames_counter == its_frames_max)
+    its_frames_counter = 0;
 
   time_frames_counter++;
   if(time_frames_counter == time_frames_max)
@@ -51,7 +57,7 @@ function embrace() {
 
 function its() {
   // show next frame
-  $("#its").attr("src","images/its/pic" + embrace_hrz_frames_counter + ".png");
+  $("#its").attr("src","images/its/pic" + its_frames_counter + ".png");
 }
 
 function how() {
